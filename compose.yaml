@@ -1,0 +1,10 @@
+
+services:
+  react-app:
+    build: .
+    container_name: cherry-cheeks
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
